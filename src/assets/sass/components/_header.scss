@@ -1,0 +1,371 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @include breakpoint(desktop) {
+        text-align: start;
+    }
+    
+
+    &_logo {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 32px;
+        align-self: center;
+
+        @include breakpoint(desktop) {
+            margin-bottom: 96px;
+            align-self: flex-start;
+        }
+    }
+
+    &_title {
+        color: $blue-900;
+        margin-bottom: 24px;
+
+        @include breakpoint(tablet) {
+            width: 55%;
+            align-self: center;
+        }
+
+        @include breakpoint(desktop) {
+            align-self: flex-start;
+            width: 90%;
+            font-size: 64px;
+        }
+    }
+
+    &_description {
+        color: $grey-500;
+        margin-bottom: 32px;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 40px; 
+            font-size: 17px;
+        }
+
+        @include breakpoint(desktop) {
+            align-self: flex-start;
+            width: 80%;
+        }
+    }
+}
+
+
+.calculator {
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 470px;
+    box-shadow: 10px 30px 30px rgba(94, 110, 133, 0.25);
+
+    @include breakpoint(tablet) {
+        margin-bottom: 150px;
+        padding: 32px;
+        min-height: 520px;
+    }
+
+    @include breakpoint(desktop) {
+        margin-top: 65px;
+    }
+
+    
+    &_title {
+        color: $blue-900;
+        margin-bottom: 24px;
+
+        @include breakpoint(tablet) {
+            text-align: start;
+            margin-bottom: 32px;
+        }
+    }
+
+    &_article {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 24px;
+
+        @include breakpoint(tablet) {
+            gap: 235px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &_option {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        .check {
+            width: 31px;
+            height: 31px;
+            border: 1px solid $grey-500;
+            border-radius: 50%;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        &-text {
+            color: $blue-900;
+        }
+    }
+
+    &_container {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        margin-top: 8px;
+
+        &-input {
+            @include input;
+            width: 50%;
+        }
+    }
+
+
+    &_form {
+        &-metric {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 8px;
+    
+            @include breakpoint(tablet) {
+                flex-direction: row;
+                gap: 24px;
+                margin-bottom: 32px;
+            }
+        }
+
+        &-imperial {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 8px;
+    
+            @include breakpoint(tablet) {
+                flex-direction: column;
+                gap: 24px;
+                margin-bottom: 32px;
+            }
+        }
+
+        &-label {
+            color: $grey-500;
+            margin-bottom: 8px;
+            text-align: start;
+        }
+    
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-input {
+            @include input;
+            width: 100%;
+            
+
+            @include breakpoint(desktop) {
+                padding: 16px;
+            }
+        }
+
+        &-cm {
+            color: $blue-500;
+            position: absolute;
+            top: 645px;
+            right: 70px;
+
+            @include breakpoint(tablet) {
+                top: 560px;
+                left: 315px;
+            }
+
+            @include breakpoint(desktop) {
+                top: 355px;
+                left: 65%;
+            }
+        }
+
+        &-kg {
+            color: $blue-500;
+            position: absolute;
+            top: 775px;
+            right: 70px;
+
+            @include breakpoint(tablet) {
+                top: 560px;
+                right: 100px;
+            }
+
+            @include breakpoint(desktop) {
+                top: 355px;
+                right: 195px;
+            }
+        }
+
+        &-ft {
+            position: absolute;
+            color: $blue-500;
+            left: 140px;
+            top: 648px;
+
+            @include breakpoint(tablet) {
+                top: 560px;
+                left: 335px;
+            }
+
+            @include breakpoint(desktop) {
+                top: 360px;
+                left: 67%;
+            }
+        }
+
+        &-in {
+            position: absolute;
+            color: $blue-500;
+            right: 70px;
+            top: 648px;
+
+            @include breakpoint(tablet) {
+                top: 560px;
+                right: 100px;
+            }
+
+            @include breakpoint(desktop) {
+                top: 360px;
+                left: 84%;
+            }
+        }
+
+        &-st {
+            position: absolute;
+            color: $blue-500;
+            left: 140px;
+            top: 778px;
+
+            @include breakpoint(tablet) {
+                top: 710px;
+                left: 335px;
+            }
+
+            @include breakpoint(desktop) {
+                top: 510px;
+                left: 67%;
+            }
+        }
+
+        &-lbs {
+            position: absolute;
+            color: $blue-500;
+            right: 70px;
+            top: 778px;
+
+            @include breakpoint(tablet) {
+                top: 710px;
+                right: 100px;
+            }
+
+            @include breakpoint(desktop) {
+                top: 510px;
+                left: 84%;
+            }
+        }
+    }
+
+
+
+    &_bienvenida {
+        background-color: $blue-500;
+        padding: 32px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: start;
+        min-height: 230px;
+
+        @include breakpoint(tablet) {
+            border-radius: 16px 100px 100px 16px;
+            min-height: 150px;
+        }
+
+        &-title {
+            color: white;
+            margin-bottom: 24px;
+        }
+
+        &-subtitle {
+            color: white;
+        }
+    }
+
+    &_resultado {
+        background-color: $blue-500;
+        padding: 32px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: start;
+
+        @include breakpoint(tablet) {
+            border-radius: 16px 100px 100px 16px;
+            max-height: 150px;
+            flex-direction: row;
+            gap: 24px;
+            justify-content: space-between;
+        }
+
+        &-container {
+            @include breakpoint(tablet) {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+            }
+        }
+
+        &-header {
+            margin-bottom: 8px;
+        }
+
+        &-title {
+            margin-bottom: 24px;
+        }
+
+        &-subtitle {
+            @include breakpoint(tablet) {
+                max-width: 43%;
+            }
+
+        }
+    }
+}
+
+
+.check-on {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: $blue-100;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    .circle {
+        width: 15px;
+        height: 15px;
+        background-color: $blue-500;
+        z-index: 1;
+        border-radius: 50%;
+        position: relative;
+        top: 8px;
+    }
+}

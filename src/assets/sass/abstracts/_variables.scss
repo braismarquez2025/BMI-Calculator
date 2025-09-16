@@ -1,0 +1,80 @@
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1220px;
+$bp-desktop-xl: 1440px;
+
+
+$grey-500: #5e6e85;
+$grey-300: #ACC1DE;
+
+$blue-900: #253347;
+$blue-500: #345FF6;
+$blue-300: #b3d3f1;
+$blue-100: #E1E7FE;
+
+$gradient: linear-gradient(90deg, rgba(214, 252, 254, 0) 0%, #D6E6FE 100%);
+
+$font: "Inter", sans-serif;
+
+.text-preset-1 {
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: -5%;
+    font-weight: 600;
+}
+
+.text-preset-2 {
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: -5%;
+    font-weight: 600;
+}
+
+.text-preset-3 {
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: -5%;
+    font-weight: 700;
+}
+
+.text-preset-4 {
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -5%;
+    font-weight: 600;
+}
+
+.text-preset-5 {
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -5%;
+    font-weight: 600;
+}
+
+.text-preset-6-semibold {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-weight: 600;
+}
+
+.text-preset-6-regular { 
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-weight: 400;
+}
+
+.text-preset-7 {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-weight: 400;
+}
+
+.text-preset-7-bold {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-weight: 700;
+}

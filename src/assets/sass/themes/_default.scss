@@ -1,0 +1,78 @@
+html * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    font-family: $font;
+    margin: 32px 24px 96px 24px;
+    background-image: url("../../images/image-man-eating.webp");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top 29% center;
+
+    @include breakpoint(tablet) {
+        margin: 32px 40px 90px 40px;
+        background-size: 430px 410px;
+        background-position: top 36% right 120%;
+    }
+
+    @include breakpoint(desktop) {
+        margin: 88px 140px 100px 140px;
+        background-size: 564px 533px;
+        background-position: top 37% right 90%;
+    }
+} 
+
+.gradient {
+    background: $gradient;
+    width: 100%;
+    height: 120%;
+    border-radius: 85px;
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+
+    @include breakpoint(tablet) {
+        height: 110%;
+        width: 100%;
+     }
+
+     @include breakpoint(desktop) {
+        height: 105%;
+        width: 60%;
+     }
+}
+
+.gradient-section {
+    background: $gradient;
+    height: 115%;
+    width: 120%;
+    z-index: -1;
+    position: absolute;
+    top: -50px;
+    left: 0;
+
+    @include breakpoint(tablet) {
+        height: 130%;
+        width: 120%;
+     }
+
+     @include breakpoint(desktop) {
+        height: 150%;
+        width: 103%;
+        border-radius: 35px;
+    }
+
+}
+
+.grid_desktop {
+    @include breakpoint(desktop) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 230px;
+    }
+}
+
