@@ -1,45 +1,36 @@
-# Bmi Calculator
+# 🧮 Bmi Calculator
 Esta es una solución al [desafío Body Mass Index Calculator en Frontend Mentor](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T). Los desafíos de Frontend Mentor ayudan a mejorar tus habilidades de programación creando proyectos realistas.
 
 
-## Tabla de contenido
+## 🔎 Descripción general
+Diseño responsive para resolución mobile(375px), tablet(768px) y desktop(1440px)
 
-- [Descripción general](#descripcion-general)
-  - [Captura de pantalla](#captura-de-pantalla)
-  - [Links](#links)
-- [Mi proceso](#mi-proceso)
-  - [Llevado a cabo con](#llevado-a-cabo-con)
-  - [Lo que aprendí](#lo-que-aprendi)
-  - [Desarrollo continuo](#desarrollo-continuo)
-- [Autor](#autor)
-
-## Descripción general
-
-### Captura de pantalla
-![](images\127-0-0-1-8000-calendar--07-04-2025_02_23_PM.png)
+### 📷 Captura de pantalla
+![](./src/assets/images/Vite-React-09-16-2025_05_16_PM.png)
 
 
-### Links
-- [Repositorio Git](https://github.com/braismarquez2025/Gestor_de_reservas)
+### 🔗 Links
+- [Repositorio Git](https://github.com/braismarquez2025/BMI-Calculator)
 - [URL del sitio en vivo]()
 
 
-## Mi proceso
+## 🚀 Mi proceso
 
-### Llevado a cabo con
-
-- Django
-- Bootstrap
-
-
-### Lo que aprendí
-Este ha sido mi primer proyecto utilizando django que he realizado por mi cuenta y me ha servido muchísimo para entender y manejar mejor las utilidades de este, la creación de vistas, la organización de urls o la creación de modelos. Además, el proyecto también incluye la parte de admin.
-
-### Desarrollo continuo
-Mi objetivo es realizar más proyectos como este para seguir practicando y coger más y más soltura a la hora de hacer las cosas, ya que en este proyecto por ejemplo he tardado bastante tiempo en insertar el calendario y configurarlo para que funcionase correctamente. Corrigiendo ciertos aspectos conseguiré avanzar mucho más rápido y trabajar de manera más eficaz y sencilla, sin tantas complicaciones.
+### 🔧 Llevado a cabo con
+- React + Vite
+- Sass
 
 
-### Autor 
-- Usuario de Frontend - [@braismarquez2025](https://www.frontendmentor.io/profile/braismarquez2025)
-- Gmail - braismarquez2003@gmail.com
-- GitHub - https://github.com/braismarquez2025
+### 💡 Lo que aprendí
+Con este proyecto me estreno usando React y me ha encantado, me queda mucho por aprender pero la rapidez a la hora de programar es increíble, además de la organización que puedes tener con los distintos componentes. 
+En cuanto a los estilos me ha dado la lata el componente de la calculadora cuando el usuario escoge el modo imperial, ya que todos los elementos que tenía posicionados de forma absoluta se me descolocaban. Como puedo solucionar este problema para futuras ocasiones, que un elemento crezca al cambiar su estado y el resto de la pagina crezca con él? A pesar de todo creo que me ha quedado bastante bien, pero mejorable sin duda.
+
+### 📈 Desarrollo continuo
+Me voy a especializar con React hasta conseguir un codigo lo mejor estructurado posible, evitando codigo que no sea reutilizable o repetido. 
+
+
+### ✌️ Autor 
+- 💼 GitHub - https://github.com/braismarquez2025
+- ✉️ Gmail - braismarquez2003@gmail.com
+- 👤 Usuario de Frontend - [@braismarquez2025](https://www.frontendmentor.io/profile/braismarquez2025)
+- 🔗 LinkedIn - [Brais Márquez](https://www.linkedin.com/in/brais-m%C3%A1rquez-b133b7365/)
